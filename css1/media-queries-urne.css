@@ -1,0 +1,73 @@
+
+@media screen and (min-width: 768px) {
+  .logo {
+    justify-content: flex-start;
+  }
+
+  .cards {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    padding: 0;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 30rem;
+  }
+
+  .card:first-of-type {
+    margin-bottom: 0;
+  }
+
+  .card-image {
+    width: 30rem;
+    height: 26rem;
+  }
+
+  .urne-name {
+    font-size: 2rem;
+  }
+
+ 
+
+  .card-btn {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .cards {
+    width: 70%;
+  }
+
+  .card:hover {
+    transform: translateY(-2rem);
+  }
+
+  .card:hover .btn-urne1,
+  .card:hover .btn-urne2
+  .card:hover .btn-urne3 {
+    font-size: 2.5rem;
+  }
+
+  .btn-urne1:hover {
+    background: var(--btn-red-hover);
+  }
+
+  .btn-urne2:hover {
+    background: var(--btn-light-blue-hover);
+  }
+}
+
+.btn-urne3:hover {
+  background: var(--btn-vert-hover);
+}
+
+@media screen and (min-width: 1400px) {
+  .cards {
+    width: 60%;
+  }
+}

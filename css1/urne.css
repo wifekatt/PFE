@@ -1,0 +1,164 @@
+
+:root {
+    --black: #1b1d29;
+    --white: #ffffff;
+    --bg-overlay: RGB(253, 255, 206, 0.96);
+    --btn-red: #fe4c13;
+    --btn-red-hover: #ee3a01;
+    --btn-light-blue: #3fb3e4;
+    --btn-light-blue-hover: #21a7e0;
+    --btn-vert: #008000;
+    --btn-vert-hover: #008000;
+    --shadow: #cccea7;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body,
+  html,
+  #app {
+    height: 100%;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  
+  
+  #app {
+
+    overflow-y: scroll;
+  }
+  
+  .app-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url(../back.jpg) no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  header {
+    background: var(--black);
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .logo h1 {
+    font-size: 3rem;
+  }
+  
+  
+  .logo img {
+    margin-right: 1rem;
+    width: 4rem;
+  }
+
+  main {
+    height: 100%;
+  }
+  
+  .cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+  
+  
+  .card {
+    width: 25rem;
+    border: 2px solid var(--black);
+    overflow: hidden;
+    box-shadow: 15px 15px 6px var(--shadow);
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .card:first-of-type {
+    margin-bottom: 15rem;
+  }
+  
+  
+  .card-image {
+    width: 25rem;
+    height: 20rem;
+    object-fit: cover;
+    vertical-align: middle;
+  }
+
+  .card-info {
+      display: flex;
+      background: var(--white);
+      color: var(--black);
+      padding: 2rem 0;
+  }
+
+  .urne-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .urne-name {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+  }
+
+
+  .card-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.5rem 0;
+    color: var(--white);
+    cursor: pointer;
+    border-top: 2px solid var(--black);
+  }
+  
+  .btn-urne1,
+  .btn-urne2,
+  .btn-urne3 {
+    transition: all 0.5s ease;
+  }
+  
+  .btn-urne1 {
+    background: var(--btn-red);
+  }
+  
+  .btn-urne2 {
+    background: var(--btn-light-blue);
+  }
+
+  .btn-urne3 {
+    background: var(--btn-vert);
+  }
+
+  .logout {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--black);
+    align-items :left;
+  }
